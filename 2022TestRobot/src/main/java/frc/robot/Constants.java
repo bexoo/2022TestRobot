@@ -13,29 +13,9 @@ public final class Constants {
     public static final double QUICK_TURN_MULTIPLIER = 0.75;
     public static final double ARCADE_DRIVE_DEADBAND = 0.025;
 
-    public static final double BALL_PATH_LOADING_SPEED = 0.5;
-    public static final double BALL_PATH_POSITION_SPEED = 0.5;
-    public static final double BALL_PATH_SHOOTING_SPEED = 0.5;
-
     public static final double AUTO_DRIVE_SPEED = 0.25;
 
     public static final double FALCON_MAX_RPM = 6000;
-
-    public static final double CAMERA_HEIGHT_INCHES = 24;  //Check this value
-    public static final double TARGET_HEIGHT_INCHES = 102.625;
-    public static final double CAMERA_PITCH_DEGREES = 18;
-    
-    public static final double DRIVE_PID_P = .01; //still needs tuned
-    public static final double DRIVE_PID_I = 0;
-    public static final double DRIVE_PID_D = 0;
-
-    public static final double ROTATE_PID_P = .01;
-    public static final double ROTATE_PID_I = 0;
-    public static final double ROTATE_PID_D = 0;
-
-    public static final double HOOD_PID_P = .1;
-    public static final double HOOD_PID_I = 0;
-    public static final double HOOD_PID_D = 0;
 
     public final class PID {
         public static final double DRIVE_PROPORTIONAL_PRACTICE     = 0.017;
@@ -59,18 +39,7 @@ public final class Constants {
         public static final double ROTATE_TOLERANCE_COMPETITION    =    1.0;
     }
 
-    public final class AIO {
-        /*
-         * The class that holds the AIO ports used (AIO = analog input/output)
-         * Used for analog sensors: they return a range of values
-         * Sensor examples include potentiometers, ultrasonic sensors, range sensors
-         * Name example: public static final int TURRET_POT_PORT = 0 (name what sensor
-         * is/does and end with port)
-         */
-        public static final int HOOD_POTENTIOMETER_PORT = 0;
-        public static final int TURRET_POTENTIOMETER_PORT = 1;
-
-    }
+    
 
     public final class CAN {
         /*
@@ -94,41 +63,10 @@ public final class Constants {
 
         public static final int LEFT_FLYWHEEL_ID = 7;
         public static final int RIGHT_FLYWHEEL_ID = 8;
-        public static final int HOOD_MOTOR_ID = 9;
-        public static final int TURRET_MOTOR_ID = 10;
-        
-        public static final int PICKUP_MOTOR_ID = 11;
 
         public static final int REV_PH_ID = 13;
     }
 
-    public final class DIO {
-        /*
-         * The class that holds the DIO ports used (DIO = digital input/output)
-         * Used for digital types of sensors: they only return a true or false
-         * Sensor examples include some encoders, photoelectric sensors
-         * Name example: public static final int PICKUP_SENSOR_PORT = 0 (name what
-         * sensor is/does and end with port)
-         */
-        public static final int ENTRANCE_SENSOR_PORT = 0;
-        public static final int MIDDLE_SENSOR_PORT = 1;
-        public static final int SHOOTER_SENSOR_PORT = 2;
-    }
-
-    public final class PCM {
-        /*
-         * The class that holds the solenoids used on the robot
-         * The PCM (Pneumatics Control Module) controls all the solenoids and is
-         * connected through CAN
-         * Will only put solenoid ports into this class
-         * Name example: public static final int PICKUP_SOLENOID = 0 (name what solenoid
-         * does and end with solenoid)
-         */
-        public static final int DRIVE_LEFT_SOLENOID = 9;
-        public static final int DRIVE_RIGHT_SOLENOID = 8;
-        public static final int PICKUP_LEFT_SOLENOID = 10;
-        public static final int PICKUP_RIGHT_SOLENOID = 11;
-    }
 
     public final class ButtonMappings {
         /*
