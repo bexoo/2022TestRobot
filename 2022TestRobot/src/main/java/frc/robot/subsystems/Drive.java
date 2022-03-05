@@ -3,6 +3,7 @@ package frc.robot.subsystems;
 import com.ctre.phoenix.motorcontrol.InvertType;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
+import com.ctre.phoenix.motorcontrol.VictorSP;
 import com.kauailabs.navx.frc.AHRS;
 
 import edu.wpi.first.wpilibj.PneumaticsModuleType;
@@ -26,10 +27,10 @@ public class Drive extends SubsystemBase {
         None
     }
 
-    private WPI_TalonFX m_leftPrimary;
-    private WPI_TalonFX m_leftSecondary;
-    private WPI_TalonFX m_rightPrimary;
-    private WPI_TalonFX m_rightSecondary;
+    private VictorSP m_leftPrimary;
+    private VictorSP m_leftSecondary;
+    private VictorSP m_rightPrimary;
+    private VictorSP m_rightSecondary;
 
     private AHRS m_gyro;
 
